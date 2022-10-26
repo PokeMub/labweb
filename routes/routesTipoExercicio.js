@@ -9,4 +9,5 @@ router.put("/:id", updateTipoExercicio);
 router.delete("/:id", deleteTipoExercicio);
 router.get("/:id", getTipoExercicio);
 router.get("/", getTipoExercicios);
+//
 export default router;
