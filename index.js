@@ -7,7 +7,7 @@ import connectDatabase from "./config/db.js";
 import routeAlunos from "./routes/routesAlunos.js";
 import routeGrupoMusuculares from "./routes/routesGrupoMusuculares.js";
 import { errorHandling } from "./utils/error.js";
-
+import routeTipoExercicio from "./routes/routesTipoExercicio.js";
 const app = express();
 dotenv.config();
 
@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(errorHandling);
 app.use("/api/alunos", routeAlunos);
 app.use("/api/grupoMusculares", routeGrupoMusuculares);
+app.use("/api/tipoExercicio", routeTipoExercicio);
 app.use("/api/auth", routeAuth);
 app.listen(8080, () => {
     connectDatabase();
