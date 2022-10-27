@@ -18,20 +18,20 @@ exercicios: [
     Exercicio.schema,
 ],
 execucoes: [
-{
-dataHoraInicio: {
-    type: Date,
-    required: true,
-},
-dataHoraFim: {
-    type: Date,
-    required: true,
-},
-observacoes: {
-    type: String,
-    trim: true,
-},
-},
+    {
+    dataHoraInicio: {
+        type: Date,
+        required: true,
+    },
+    dataHoraFim: {
+        type: Date,
+        required: true,
+    },
+    observacoes: {
+        type: String,
+        trim: true,
+    },
+    },
 ],
 },
 { timestamps: true }
