@@ -33,6 +33,12 @@ const AlunoSchema = new Schema(
             type: Boolean,
             default: false,
         },
+        fichas: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: "Ficha",
+            },
+        ],
     },
     { timestamps: true }
 );

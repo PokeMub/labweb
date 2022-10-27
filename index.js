@@ -10,6 +10,7 @@ import { errorHandling } from "./utils/error.js";
 import routeTipoExercicio from "./routes/routesTipoExercicio.js";
 import routeExercicio from "./routes/routesExercicio.js";
 import routeInstrutor from "./routes/routesInstrutor.js";
+import routeFicha from "./routes/routesFicha.js";
 const app = express();
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.use("/api/tipoExercicio", routeTipoExercicio);
 app.use("/api/exercicio", routeExercicio);
 app.use("/api/auth", routeAuth);
 app.use("/api/instrutor", routeInstrutor);
+app.use("/api/ficha", routeFicha);
 app.listen(8080, () => {
     connectDatabase();
     console.log("Servidor rodando na porta 8080.");
